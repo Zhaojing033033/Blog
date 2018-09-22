@@ -1,5 +1,5 @@
 basedir=/usr/local/mysql
-mv  my.conf /usr/local
+mv  my.conf /usr/local/
 cd /usr/local/
 #下载解压
 wget https://cdn.mysql.com//Downloads/MySQL-5.7/mysql-5.7.23-linux-glibc2.12-x86_64.tar.gz
