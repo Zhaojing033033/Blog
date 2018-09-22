@@ -1,4 +1,5 @@
 basedir=/usr/local/mysql
+mv  my.conf /usr/local
 cd /usr/local/
 #下载解压
 wget https://cdn.mysql.com//Downloads/MySQL-5.7/mysql-5.7.23-linux-glibc2.12-x86_64.tar.gz
@@ -22,7 +23,7 @@ bin/mysqld --user=mysql --datadir=/usr/local/mysql/data --basedir=/usr/local/mys
 #echo "socket=$basedir/mysql.sock"
 
 #直接用拷贝的,需要将my.conf与该文件的放置在同一目录
-cat my.conf >>/etc/my.conf
+cat /usr/local/my.conf >/etc/my.conf
 #创建软连接，可以使用service mysql start/stop/restart进行服务管理
 ln -s /usr/local/mysql/support-files/mysql.server /etc/init.d/mysql
 #创建个软连接，可以任何目录使用mysql的命令
