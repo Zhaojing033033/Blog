@@ -30,5 +30,6 @@ ln -s /usr/local/mysql/support-files/mysql.server /etc/init.d/mysql
 ln -s /usr/local/mysql/bin/mysql /usr/bin
 #删除mysql的压缩包
 rm -f /usr/local/mysql-5.7.23-linux-glibc2.12-x86_64.tar.gz
+rm -f /usr/local/my.conf
 
 
